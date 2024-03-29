@@ -3,6 +3,42 @@ body{
     background: #fff;
     color: #434455;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-wrap{
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
 .logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -11,6 +47,7 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 .accent-header{
     color: #2e2f42;
@@ -18,24 +55,29 @@ body{
 .accent-footer {
     color: #f4f4fd;
 }
-a {
-    text-decoration: none;
+.nav-list{
+    display: flex;
+    gap: 40px;
 }
-ul {
-    list-style-type: none;
-}
-.nav-list {
+.nav-item {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
-.nav-list:hover, .nav-list:focus{
+.nav-item:hover, .nav-list:focus{
     color: #404bbf;
 }
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+.adress-list {
+    display: flex;
+    gap: 40px;
 }
 .address-link {
     font-size: 16px;
@@ -48,6 +90,8 @@ ul {
 }
 .section-one{
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .title-one{
     font-weight: 700;
@@ -56,6 +100,9 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 .button {
     font-weight: 500;
@@ -70,7 +117,29 @@ ul {
     background: #404bbf;
 }
 .section-two{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section-tree{
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-four{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team-member{
     background: #fff;
@@ -98,25 +167,15 @@ ul {
 }  
 .footer {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }  
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    max-width: 264px;
 }
 
 
