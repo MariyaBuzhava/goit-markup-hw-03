@@ -22,6 +22,11 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -48,6 +53,7 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    display: inline-block;
 }
 .accent-header{
     color: #2e2f42;
@@ -71,6 +77,10 @@ ul {
 .nav-item:hover, .nav-list:focus{
     color: #404bbf;
 }
+.item:active {
+    color: #404bbf;
+    text-decoration: underline;
+}
 .address {
     font-style: normal;
     margin-left: auto;
@@ -90,8 +100,7 @@ ul {
 }
 .section-one{
     background: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 188px 0;
 }
 .title-one{
     font-weight: 700;
@@ -101,8 +110,7 @@ ul {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    margin: 0 auto;
-    margin-bottom: 48px;
+    margin: 0 auto 48px auto;
 }
 .button {
     font-weight: 500;
@@ -112,6 +120,11 @@ ul {
     color: #fff;
     cursor: pointer;
     background: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    display: block;
 }
 .button:hover , .button:focus{
     background: #404bbf;
@@ -132,17 +145,63 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.section-two-list{
+    display: flex;
+    gap: 24px;
+}
+.section-two-item {
+    width: calc(( 100% - 3 * 24px ) / 4 )
+}
 .section-tree{
     background-color: #f4f4fd;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.section-four{
-    padding-top: 120px;
-    padding-bottom: 120px;
+.section-tree-list {
+    display: flex;
+    gap: 24px;
 }
 .team-member{
     background: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0 0 4px 4px;
+}
+.team-member-desc {
+    padding: 32px 16px;
+}
+.title-team {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+}
+.text-team {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+}
+.section-four {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-four-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.section-four-item {
+    width: calc((100% - 2 * 24px) / 3)
+}
+.portfolio-desc {
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 .name {
     font-size: 36px;
@@ -151,6 +210,7 @@ ul {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .title{
     font-weight: 500;
@@ -176,6 +236,7 @@ ul {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+    padding-top: 16px;
 }
 
 
