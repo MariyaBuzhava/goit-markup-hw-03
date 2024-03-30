@@ -53,7 +53,6 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-    display: inline-block;
 }
 .accent-header{
     color: #2e2f42;
@@ -121,6 +120,7 @@ img {
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
+    min-width: 169px;
 }
 .button:hover , .button:focus{
     background: #404bbf;
@@ -164,7 +164,7 @@ img {
     border-radius: 0 0 4px 4px;
 }
 .team-member-desc {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 .title-team {
     font-weight: 500;
@@ -173,6 +173,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 8px;
 }
 .text-team {
     font-size: 16px;
@@ -214,6 +215,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .text {
     font-size: 16px;
@@ -226,13 +228,16 @@ img {
     padding-top: 100px;
     padding-bottom: 100px;
 }  
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
-    padding-top: 16px;
 }
 
 
